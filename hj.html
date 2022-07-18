@@ -1,43 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="epic.css">
-    <script type="text/javascript">
-        var granimInstance = new Granim({
-            element: '#canvas-basic',
-            direction: 'left-right',
-            isPausedWhenNotInView: true,
-            states: {
-                "default-state": {
-                    gradients: [
-                        ['#ff9966', '#ff5e62'],
-                        ['#00F260', '#0575E6'],
-                        ['#e1eec3', '#f05053']
-                    ]
-                }
-            }
-        })
-    </script>
-    <title>Document</title>
-</head>
-
+<html>
 <body>
-    <canvas id="canvas-basic"></canvas>
 
+<canvas id="myCanvas" width="200" height="100"
+style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
 
-
-
-
-
-
-
-
-
-
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0,0,150,75);
+</script>
 
 </body>
-
 </html>
